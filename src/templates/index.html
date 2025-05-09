@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion by Whisper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background: linear-gradient(135deg, #3B4EF0 0%, #55178C 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .background-seq {
+        position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: 250px;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+        
+        .praut-container {
+            background-color: rgba(20, 20, 40, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 2rem;
+            color: white;
+            max-width: 800px;
+        }
+        
+        .praut-container::before {
+            content: "";
+            display: block;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 30px;
+            margin-bottom: 1rem;
+        }
+        
+        .praut-heading {
+            color: white;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        
+        .praut-label {
+            color: #b8b8d4;
+            margin-bottom: 0.5rem;
+        }
+        
+        .praut-control {
+            background-color: rgba(30, 30, 60, 0.7) !important;
+            border: none !important;
+            color: white !important;
+            padding: 0.75rem !important;
+        }
+        
+        .praut-control:focus {
+            box-shadow: 0 0 0 0.25rem rgba(248, 216, 72, 0.25) !important;
+            background-color: rgba(40, 40, 70, 0.7) !important;
+        }
+        
+        .praut-select {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f8d848' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") !important;
+            background-repeat: no-repeat !important;
+            background-position: right 15px center !important;
+            padding-right: 40px !important;
+        }
+        
+        .praut-file::file-selector-button {
+            background-color: rgba(40, 40, 70, 0.8) !important;
+            color: white !important;
+            border: none !important;
+            padding: 8px 16px !important;
+            margin-right: 15px !important;
+            border-radius: 5px !important;
+        }
+        
+        .praut-audio-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        .praut-audio {
+            background-color: #000 !important;
+            border-radius: 50px !important;
+            width: 100% !important;
+            margin-bottom: 1rem !important;
+        }
+        
+        .praut-btn {
+            background-color: #f8d848 !important;
+            color: #333 !important;
+            border: none !important;
+            border-radius: 50px !important;
+            font-weight: 600 !important;
+            padding: 0.75rem !important;
+            width: 100% !important;
+        }
+        
+        .praut-btn:hover, .praut-btn:focus {
+            background-color: #fae26b !important;
+            color: #333 !important;
+        }
+        
+        .praut-text {
+            background-color: rgba(30, 30, 60, 0.7);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+        <!-- Logo animation container - maximálně jednoduchá struktura -->
+        <div id="logo-container" class="mb-4" style="position: relative; width: 100%; max-width: 600px; height: 250px; margin: 0 auto;">
+            <!-- Základní obrázek -->
+            <img id="baseImage" src="../static/img/VojtaLogo00.png" alt="Vojta Logo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+            
+            <!-- Pouze jeden překrývající se obrázek, který budeme měnit pomocí JS -->
+            <img id="overlayImage" src="../static/img/VojtaLogo01.png" alt="Vojta Logo Overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0;">
+        </div>
+        
+        <!-- Formulář -->
+        <div class="praut-container">
+        
+        <a href="https://www.praut.cz" class="praut-logo">
+            <img src="../static/img/VectorLogo.png" alt="Praut Logo" class="img-fluid mb-4" style="max-width: 300px;">
+        </a>        
+        <h1 class="praut-heading">Přepis a překlad</h1>
+        <form id="conversion-form" enctype="multipart/form-data" method="post">
+            <div class="mb-4">
+                <label for="recorder" class="form-label praut-label">Vložit audio:</label>
+                <input type="file" accept="audio/*" capture id="recorder" name="file" class="form-control praut-control praut-file" required>
+            </div>
+    
+            <div class="mb-4">
+                <label for="model_type" class="form-label praut-label">Vyberte jaký model použít pro přepis a překlad:</label>
+                <select id="model_type" name="model_type" class="form-select praut-control praut-select">
+                    <option value="turbo">turbo</option>
+                    <option value="tiny">tiny</option>
+                    <option value="base">base</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+                </select>
+            </div>
+    
+            <div class="mb-4">
+                <label for="file_type" class="form-label praut-label">Titulky ve formátu:</label>
+                <select id="file_type" name="file_type" class="form-select praut-control praut-select">
+                    <option value="srt">srt</option>
+                    <option value="vtt">vtt</option>
+                </select>
+            </div>
+    
+            <div class="mb-4">
+                <label for="filename" class="form-label praut-label">Jméno titulků:</label>
+                <input type="text" id="filename" name="filename" class="form-control praut-control" placeholder="subtitle">
+            </div>
+    
+            <div class="mb-4">
+                <label for="max_char" class="form-label praut-label">Maximální počet znaků pro titulky: <small class="text-light-emphasis">(Základně je 80)</small></label>
+                <input type="number" name="max_char" class="form-control praut-control" placeholder="80">
+            </div>
+    
+            <div class="mb-4">
+                <label for="translate_to" class="form-label praut-label">Přeložit do jazyka:</label>
+                <select name="translate_to" id="translate_to" class="form-select praut-control praut-select">
+                    <option value="english">Angličtina</option>
+                    <option value="german">Němčina</option>
+                    <option value="spanish">Španělština</option>
+                    <option value="arabic">Arabština</option>
+                    <option value="hindi">Hindština</option>
+                    <option value="bengali">Bengalština</option>
+                    <option value="portuguese">Portugalština</option>
+                    <option value="russian">Putin je Zmrd</option>
+                    <option value="urdu">Urdština</option>
+                    <option value="french">Francouština</option>
+                    <option value=zh-CN>Chinese</option>
+                </select>
+            </div>
+    
+            <div class="d-flex align-items-center mb-3">
+                <audio id="player" controls class="me-3"></audio>
+                <button type="submit" id="submit" class="btn btn-primary">
+                    <span class="spinner-border spinner-border-sm d-none" id="spinner" role="status" aria-hidden="true"></span>
+                    Přechroustat zvuk a přeložit titulky
+                </button>
+            </div>
+        
+            {% if text %}
+                <div class="text">{{ text }}</div>
+            {% endif %}
+        </form>
+    </div>
+
+    <script src="/static/main.js"></script>
+</body>
+</html>

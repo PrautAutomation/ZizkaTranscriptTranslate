@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  whisper:
+    build: 
+      context: .
+    networks: 
+      proxy_proxy-net:
+    environment:
+      - VIRTUAL_HOST=zizka.praut.cz
+      - VIRTUAL_PORT=17666
+      - LETSENCRYPT_HOST=zizka.praut.cz
+    restart: unless-stopped
+    volumes:
+      - whisper-data:/appold
+
+networks:
+  proxy_proxy-net:
+    external: true
+
+volumes:
+  whisper-data:
