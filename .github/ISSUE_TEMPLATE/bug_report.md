@@ -3,7 +3,7 @@ název: Hlášení o chybě
 o: Vytvořte hlášení, které nám pomůže zlepšit
 titul: ''
 štítky: ''
-přiřazeno: Kabanosk
+přiřazeno: PrautAutomation
 
 ---
 
