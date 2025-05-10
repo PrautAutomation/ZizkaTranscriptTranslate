@@ -1,20 +1,20 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: enhancement
-assignees: Kabanosk
+jméno: Žádost o funkci
+o projektu: Navrhněte nápad pro tento projekt
+titul: ''
+štítky: vylepšení
+přiřazení: PrautAutomation
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**Souvisí váš požadavek na funkci s nějakým problémem? Popište ho.**
+Jasný a stručný popis problému. Např. Vždycky mě frustruje, když [...]
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**Popište řešení, které byste chtěli**
+Jasný a stručný popis toho, co chcete dosáhnout.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+**Popište alternativy, které jste zvažovali**
+Jasný a stručný popis všech alternativních řešení nebo funkcí, které jste zvažovali.
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**Další kontext**
+Sem přidejte jakýkoli další kontext nebo snímky obrazovky týkající se žádosti o funkci.
