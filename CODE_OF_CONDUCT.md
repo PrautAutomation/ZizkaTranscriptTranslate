@@ -1,128 +1,110 @@
-# Contributor Covenant Code of Conduct
+# Kodex chování pro přispěvatele
 
-## Our Pledge
+## Náš závazek
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, religion, or sexual identity
-and orientation.
+My jako členové, přispěvatelé a vedoucí se zavazujeme, že účast v naší komunitě bude pro všechny bez obtěžování, bez ohledu na věk, velikost těla, viditelné či neviditelné postižení, etnickou příslušnost, pohlavní znaky, genderovou identitu a projev, úroveň zkušeností, vzdělání, socioekonomické postavení, národnost, osobní vzhled, rasu, náboženství nebo sexuální identitu a orientaci.
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+Zavazujeme se jednat a interagovat způsobem, který přispívá k otevřené, vřelé, rozmanité, inkluzivní a zdravé komunitě.
 
-## Our Standards
+## Naše standardy
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+Příklady chování, které přispívá k pozitivnímu prostředí pro naši
+komunitu, zahrnují:
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+* Projevování empatie a laskavosti k ostatním lidem
+* Respektování odlišných názorů, úhlů pohledu a zkušeností
+* Poskytování a zdvořilé přijímání konstruktivní zpětné vazby
+* Přijímání odpovědnosti a omluva těm, kterých se naše chyby dotkly,
+a poučení se z této zkušenosti
+* Zaměření se na to, co je nejlepší nejen pro nás jako jednotlivce, ale pro celou komunitu
 
-Examples of unacceptable behavior include:
+Příklady nepřijatelného chování zahrnují:
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+* Používání sexualizovaného jazyka nebo obrazů a sexuální pozornost nebo návrhy jakéhokoli druhu
+* Trolling, urážlivé nebo hanlivé komentáře a osobní nebo politické útoky
+* Veřejné nebo soukromé obtěžování
+* Zveřejňování soukromých informací ostatních, jako je fyzická nebo e-mailová adresa, bez jejich výslovného souhlasu
+* Jiné chování, které by mohlo být důvodně považováno za nevhodné v profesionálním prostředí
 
-## Enforcement Responsibilities
+## Povinnosti v oblasti vymáhání
 
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+Vedoucí představitelé komunity jsou zodpovědní za objasnění a vymáhání našich standardů
+přijatelného chování a přijmou vhodná a spravedlivá nápravná opatření v reakci na jakékoli chování, které považují za nevhodné, ohrožující, urážlivé,
+nebo škodlivé.
 
-Community leaders have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct, and will communicate reasons for moderation
-decisions when appropriate.
+Vedoucí komunity mají právo a povinnost odstranit, upravit nebo odmítnout
+komentáře, commity, kód, úpravy wiki, problémy a další příspěvky, které
+neodpovídají tomuto Kodexu chování, a v případě potřeby sdělí důvody pro rozhodnutí o moderování.
 
-## Scope
+## Rozsah působnosti
 
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address,
-posting via an official social media account, or acting as an appointed
-representative at an online or offline event.
+Tento Kodex chování platí ve všech komunitních prostorech a platí také tehdy, když
+jednotlivec oficiálně zastupuje komunitu na veřejných místech.
+Mezi příklady zastupování naší komunity patří používání oficiální e-mailové adresy,
+zveřejňování příspěvků prostřednictvím oficiálního účtu na sociálních sítích nebo vystupování jako pověřený
+zástupce na online nebo offline akci.
 
-## Enforcement
+## Vymáhání
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
+Případy urážlivého, obtěžujícího nebo jinak nepřijatelného chování mohou být
+nahlášeny vedoucím komunity odpovědným za vymáhání na adrese
 .
-All complaints will be reviewed and investigated promptly and fairly.
 
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
+Všechny stížnosti budou neprodleně a spravedlivě přezkoumány a vyšetřeny.
 
-## Enforcement Guidelines
+Všichni vedoucí komunity jsou povinni respektovat soukromí a bezpečnost
+oznamovatele jakéhokoli incidentu.
 
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
+## Pokyny pro vymáhání
 
-### 1. Correction
+Vedoucí představitelé komunity se budou řídit těmito Pokyny pro dopad na komunitu při určování
+důsledků za jakékoli jednání, které považují za porušení tohoto Kodexu chování:
 
-**Community Impact**: Use of inappropriate language or other behavior deemed
-unprofessional or unwelcome in the community.
+### 1. Náprava
 
-**Consequence**: A private, written warning from community leaders, providing
-clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
+**Dopad na komunitu**: Používání nevhodného jazyka nebo jiné chování považované za
+neprofesionální nebo nežádoucí v komunitě.
 
-### 2. Warning
+**Důsledek**: Soukromé písemné varování od vedoucích představitelů komunity, které
+objasňuje povahu porušení a vysvětluje, proč bylo
+chování nevhodné. Může být požadována veřejná omluva.
 
-**Community Impact**: A violation through a single incident or series
-of actions.
+### 2. Varování
 
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
-includes avoiding interactions in community spaces as well as external channels
-like social media. Violating these terms may lead to a temporary or
-permanent ban.
+**Dopad na komunitu**: Porušení prostřednictvím jednoho incidentu nebo série
+činů.
 
-### 3. Temporary Ban
+**Důsledek**: Varování s důsledky pro pokračující chování. Žádná
+interakce s dotčenými osobami, včetně nevyžádané interakce s
+těmi, kteří vymáhají dodržování Kodexu chování, po stanovenou dobu. To
+zahrnuje vyhýbání se interakcím v komunitních prostorách i externích kanálech,
+jako jsou sociální média. Porušení těchto podmínek může vést k dočasnému nebo
+trvalému zákazu.
 
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
+### 3. Dočasný zákaz
 
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
-private interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, is allowed during this period.
-Violating these terms may lead to a permanent ban.
+**Dopad na komunitu**: Vážné porušení standardů komunity, včetně trvalého nevhodného chování.
 
-### 4. Permanent Ban
+**Důsledek**: Dočasný zákaz jakékoli interakce nebo veřejné komunikace s komunitou po stanovenou dobu. Během této doby není povolena žádná veřejná ani soukromá interakce s dotčenými osobami, včetně nevyžádané interakce s těmi, kteří prosazují dodržování Kodexu chování.
 
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior,  harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
+Porušení těchto podmínek může vést k trvalému zákazu.
 
-**Consequence**: A permanent ban from any sort of public interaction within
-the community.
+### 4. Trvalý zákaz
 
-## Attribution
+**Dopad na komunitu**: Prokázání vzorce porušování standardů komunity, včetně trvalého nevhodného chování, obtěžování jednotlivce nebo agrese vůči skupinám jednotlivců či jejich znevažování.
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.0, available at
+**Důsledek**: Trvalý zákaz jakékoli veřejné interakce v rámci komunity.
+
+## Uvedení zdroje
+
+Tento kodex chování je adaptován z [Contributor Covenant][homepage],
+verze 2.0, dostupné na adrese
 https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
 
-Community Impact Guidelines were inspired by [Mozilla's code of conduct
-enforcement ladder](https://github.com/mozilla/diversity).
+Pokyny pro dopad na komunitu byly inspirovány [Mozilla's Code of Conduct](https://github.com/mozilla/diversity).
 
 [homepage]: https://www.contributor-covenant.org
 
-For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
+Odpovědi na časté otázky týkající se tohoto kodexu chování naleznete v sekci Často kladené otázky na adrese
+https://www.contributor-covenant.org/faq. Překlady jsou k dispozici na adrese
 https://www.contributor-covenant.org/translations.
