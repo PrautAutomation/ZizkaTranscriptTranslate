@@ -16,8 +16,8 @@
 1. Nainstalujte [Docker](https://docs.docker.com/engine/install/)
 2. Naklonujte repozitář - `git clone https://github.com/PrautAutomation/ZizkaTranscriptTranslate.git`
 3. Přejděte do adresáře repozitáře - `cd ZizkaTranscriptTranslate`
-4. Vytvořte obraz Dockeru - `docker build -t app .`
-5. Spusťte kontejner Dockeru - `docker run --name app_container -p 18666:18666 app`
+4. Vytvořte obraz Dockeru - `docker build -t appold .`
+5. Spusťte kontejner Dockeru - `docker run --name app_container -p 18666:18666 appold`
 6. Přejděte do prohlížeče a zadejte `http://127.0.0.1:18666/`
 
 ### Příště
