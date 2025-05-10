@@ -1,17 +1,17 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: Kabanosk
+název: Hlášení o chybě
+o: Vytvořte hlášení, které nám pomůže zlepšit
+titul: ''
+štítky: ''
+přiřazeno: Kabanosk
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Popište chybu**
+Jasný a stručný popis chyby.
 
-**OS (please complete the following information):**
- - [e.g. iOS]
+**OS (doplňte prosím následující informace):**
+- [např. iOS]
 
-**Additional context**
-Add any other context about the problem here.
+**Další kontext**
+Sem přidejte jakýkoli další kontext k problému.
