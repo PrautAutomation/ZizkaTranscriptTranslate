@@ -1,22 +1,30 @@
-version: '3'
+version: '3.8'
 
 services:
-  whisper:
+  whisper-gpu:
     build: 
       context: .
-    networks: 
-      proxy_proxy-net:
+      dockerfile: Dockerfile.gpu
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
     environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
       - VIRTUAL_HOST=zizka.praut.cz
       - VIRTUAL_PORT=18666
       - LETSENCRYPT_HOST=zizka.praut.cz
-    restart: unless-stopped
+    ports:
+      - "18666:18666"
     volumes:
       - whisper-data:/appold
-
-networks:
-  proxy_proxy-net:
-    external: true
+      - whisper-models:/appold/models
+    restart: unless-stopped
 
 volumes:
   whisper-data:
+  whisper-models:

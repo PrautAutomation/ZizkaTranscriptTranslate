@@ -2,15 +2,24 @@ fastapi
 uvicorn
 jinja2
 python-multipart
-stable-ts
 
+# GPU optimalizovaná verze stable-ts
+stable-ts[cuda]
+
+# PyTorch s CUDA podporou pro Windows
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.7.0
+torchaudio==2.7.0
+
+# Další závislosti
 numpy
-torch
 tqdm
 more-itertools
 transformers>=4.19.0
 ffmpeg-python==0.2.0
 datetime
 deep_translator
-
 srt~=3.5.3
+
+# CUDA optimalizace
+nvidia-ml-py3  # pro monitorování GPU

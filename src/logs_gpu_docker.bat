@@ -1,0 +1,3 @@
+@echo off
+echo Showing GPU Docker logs (press Ctrl+C to exit)...
+docker-compose -f docker-compose-gpu.yml logs -f
