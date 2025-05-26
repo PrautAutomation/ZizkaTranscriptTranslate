@@ -10,7 +10,7 @@ If you already have Python installed, you can skip this. I recommend version **3
 ---
 
 ### Step 2: Install FFmpeg
-
+New 
 FFmpeg is essential for Whisper to process audio and video files.
 
 1.  Go to [ffmpeg.org/download.html](https://ffmpeg.org/download.html)

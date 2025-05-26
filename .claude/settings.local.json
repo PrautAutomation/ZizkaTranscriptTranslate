@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:docs.nvidia.com)"
+      "WebFetch(domain:docs.nvidia.com)",
+      "Bash(nvidia-smi:*)",
+      "Bash(python:*)"
     ],
     "deny": []
   }

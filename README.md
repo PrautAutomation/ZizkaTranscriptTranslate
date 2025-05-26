@@ -1,4 +1,4 @@
-## Webová stránka, která převádí řeč na text pomocí modelu Whisper ([Oficiální repozitář](https://github.com/openai/whisper))
+docker## Webová stránka, která převádí řeč na text pomocí modelu Whisper ([Oficiální repozitář](https://github.com/openai/whisper))
 
 ## Hostování webových stránek na localhostu:
 
