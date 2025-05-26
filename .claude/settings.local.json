@@ -3,7 +3,9 @@
     "allow": [
       "WebFetch(domain:docs.nvidia.com)",
       "Bash(nvidia-smi:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "WebFetch(domain:hub.docker.com)",
+      "Bash(docker pull:*)"
     ],
     "deny": []
   }

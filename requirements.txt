@@ -5,7 +5,7 @@ python-multipart
 stable-ts
 
 numpy
-torch --index-url https://download.pytorch.org/whl/cu121
+torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 tqdm
 more-itertools
 transformers>=4.19.0
