@@ -1,0 +1,18 @@
+FROM nvidia/cuda:12.1-devel-ubuntu22.04
+
+WORKDIR /appold
+
+# Install Python and dependencies
+RUN apt-get -y update && \
+    apt-get -y upgrade && \
+    apt-get install -y python3 python3-pip ffmpeg && \
+    ln -s /usr/bin/python3 /usr/bin/python
+
+COPY requirements.txt /appold
+
+RUN pip install uv
+RUN uv pip install --system -r requirements.txt
+
+COPY src/ /appold
+
+CMD ["uvicorn", "main:appold", "--host", "0.0.0.0", "--port", "18666"]

@@ -9,6 +9,7 @@ import ffmpeg
 import numpy as np
 import srt as srt
 import stable_whisper
+import torch
 from deep_translator import GoogleTranslator
 
 DEFAULT_MAX_CHARACTERS = 80
@@ -118,8 +119,14 @@ async def download_subtitle(
     with open('audio.mp3', 'wb') as f:
         f.write(file)
     
-    model = stable_whisper.load_model(model_type)
-    result = model.transcribe("audio.mp3", regroup=False)
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    model = stable_whisper.load_model(model_type, device=device)
+    
+    transcribe_kwargs = {"regroup": False}
+    if device == "cuda":
+        transcribe_kwargs["fp16"] = True
+    
+    result = model.transcribe("audio.mp3", **transcribe_kwargs)
 
     subtitle_file = "subtitle.srt"
 
